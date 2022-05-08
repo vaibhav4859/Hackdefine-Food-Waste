@@ -11,7 +11,9 @@ Following is a sample username "userxyz" logged in:
 
 
 A.<--Navbar-->
+
 our navigation bar contains 5 options
+
 1.Home
 2.About us:- Brief details of our project are shown here.
 3.Events-> This section contains the event which we have organised, like re-distribution of food, which would have been wasted at various parties.
@@ -30,6 +32,7 @@ Our platform have a donation button through which a user  can donate food or mon
 User can donate through 2 methods either by money or by food.
 
 Donation:
+
 1.Donate by money
 2.Donate by food:
 
