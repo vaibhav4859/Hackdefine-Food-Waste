@@ -263,7 +263,7 @@ app.post('/payment', function (req, res) {
     db.collection('/payments').insertOne(data, function (err, collection) {
         if (err) throw err;
         else {
-            userModel.create(data);
+            paymentModel.create(data);
             console.log(data);
             console.log("Record inserted Successfully");
         }
@@ -294,7 +294,7 @@ app.post('/contact-us', (req, res) => {
     db.collection('contact-Msg').insertOne(data, function (err, collection) {
         if (err) throw err;
         else {
-            userModel.create(data);
+            ContactModel.create(data);
             console.log(data);
             console.log("Record inserted Successfully");
         }
@@ -322,7 +322,7 @@ app.post('/organisation', (req, res) => {
     db.collection('Organisation').insertOne(data, function (err, collection) {
         if (err) throw err;
         else {
-            userModel.create(data);
+            OrganisationModel.create(data);
             console.log(data);
             console.log("Record inserted Successfully");
         }
@@ -364,7 +364,7 @@ app.post('/byfood', (req, res) => {
     db.collection('DonatebyFood').insertOne(data, function (err, collection) {
         if (err) throw err;
         else {
-            userModel.create(data);
+            DonatebyFodModel.create(data);
             console.log(data);
             console.log("Record inserted Successfully");
         }
