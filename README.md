@@ -1,28 +1,31 @@
 
-    <ul class="read">
-        <li>
-            We were given the problem statement that a lot of food is wasted after an event such as marriages birthday parties and many more
-        </li>
-        <li>There are many people on our planet who do not get even a single day meal.</li>
-        <li>So we created a platform that connects marriage/party halls and individuals to connect to the nearest place and donate food to those needy people.
-        </li>
-        <li>Our main motive is to reduce the food wastage.</li>
-        <li>For Accessing our site the user first needs to sign up on the website, and Login to his account.</li>
-    </ul>
-    <ul class="nav">
-        <li>1.Home</li>
-        <li>2.About us:- Brief details of our project are shown here.</li>
-        <li>3.Events-> This section contains the event which we have organised, like re-distribution of food, which would have been wasted at various parties.
-        </li>
-        <li>4.Our Vision->This section contains the what is our gaols and what we want to achieve through this platfrom .
-        </li>
-        <li>5.Our Team-> This section contains the members of our group who are handling different roles for running the platfrom.
-        </li>
-        <li>6.Contact->This section contains for the user to interact with us if they are facing any difficulty or they want review our platfrom.
-        </li>
-        <li><img src="https://user-images.githubusercontent.com/90549245/167296140-4eecd44b-393d-4e6b-ba95-55d794641903.png)
-            "></li>
-    </ul>
+->We were given the problem statement that a lot of food is wasted after an event such as marriages birthday parties and many more  
+->There are many people on our planet who do not get even a single day meal.
+->So we created a platform that connects marriage/party halls and individuals to connect 
+to the nearest place and donate food to those needy people.
+->Our main motive is to reduce the food wastage.
+->For Accessing our site the user first needs to sign up on the website, and Login to his account.
+
+  ![image](https://user-images.githubusercontent.com/90549245/167296047-a32a117b-826f-4f02-8878-9e0c774f7c06.png)
+Following is a sample username "userxyz" logged in:
+![image](https://user-images.githubusercontent.com/90549245/167296104-59c9cb2b-57aa-4c5a-91f7-dad13ef7f166.png)
+
+
+A.<--Navbar-->
+
+our navigation bar contains 5 options
+
+1.Home
+2.About us:- Brief details of our project are shown here.
+3.Events-> This section contains the event which we have organised, like re-distribution of food, which would have been wasted at various parties.
+4.Our Vision->This section contains the what is our gaols and what we want to achieve through this platfrom .
+5.Our Team-> This section contains the members of our group who are handling different roles for running
+the platfrom.
+6.Contact->This section contains for the user to interact with us if they are facing any difficulty or they want
+review our platfrom.
+this is how contact us page looks like: 
+![image](https://user-images.githubusercontent.com/90549245/167296140-4eecd44b-393d-4e6b-ba95-55d794641903.png)
+
 
 
 B.                        <--Logic-->
