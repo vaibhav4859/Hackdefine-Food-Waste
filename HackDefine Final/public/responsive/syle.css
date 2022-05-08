@@ -1,0 +1,87 @@
+#profiles {
+    flex-direction: column;
+}
+
+#events .heading {
+    flex-direction: column;
+    align-items: center;
+}
+
+#team .box {
+    margin: 5% 15%;
+}
+
+#team .box img {
+    margin: 7% 0% 0% 19%;
+    width: 60%;
+}
+
+.image img {
+    height: 15rem;
+}
+
+#prev,
+#next {
+    height: 20rem;
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-brand p {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8rem;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 4%;
+}
+
+#navbarCollapse {
+    text-align: center;
+}
+
+#sign-in-btn {
+    margin: 0;
+}
+
+#quotes {
+    padding: 0% 18%;
+}
+
+#quotes .quotes2 {
+    font-size: 1rem;
+    text-shadow: 0.2px 0.5px 0.5px black;
+    line-height: 1.5rem;
+    margin-top: 0;
+}
+
+#quotes .author {
+    font-size: 1rem;
+}
+
+#motivate {
+    margin: 35px auto;
+}
+
+#goals {
+    flex-direction: column;
+}
+
+.embed-responsive {
+    justify-content: center;
+}
+
+.embed-responsive-item {
+    height: 10rem;
+}

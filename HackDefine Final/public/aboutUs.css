@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/* CSS Variables */
+
+:root {
+    --red: #ed563b;
+    --heading-font: 'Ubuntu', sans-serif;
+    --para-font: 'Baloo Bhai 2', cursive;
+}
+
+#About .heading,
+#contact-us .heading,
+#team .heading,
+#goals .heading,
+#events .heading,
+#vision .heading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-family: var(--heading-font);
+    text-shadow: 2px 2px 2px black;
+}
+
+#About .heading span,
+#contact-us span,
+#goals span,
+#events span,
+#vision span {
+    color: var(--red);
+}
+
+#About .floatingimg,
+#contact-us .floatingimg,
+#team .floatingimg,
+#events .floatingimg,
+#vision .floatingimg {
+    display: flex;
+    margin: 20px auto;
+}
+
+#About {
+    padding-top: 40px;
+}
+
+#About #motivate {
+    color: white;
+}
+
+#motivate {
+    display: block;
+    margin: 70px auto;
+    width: auto;
+    text-align: center;
+    padding-top: 80px;
+    height: auto;
+    background: url('./images/about\ bg.jpg') no-repeat center center/cover;
+    /* overflow: auto; */
+}
+
+.event-slider {
+    margin-top: 2.5%;
+}
+
+#About #motivate h1 {
+    font-size: 2rem;
+    padding: 25px;
+    font-family: var(--heading-font);
+    text-shadow: 6px 2px 2px black;
+}
+
+.red-span {
+    color: var(--red);
+}
+
+#About #motivate p {
+    padding: 20px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.donate-btn {
+    background: var(--red);
+    color: white;
+    width: 185px;
+    height: 55px;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: var(--heading-font);
+    margin-right: 3%;
+}
+
+.donate-form {
+    display: flex;
+    width: 83%;
+    justify-content: center;
+}
+
+.close {
+    border: 1px solid white;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    margin-left: 27rem;
+}
+
+.close span {
+    font-size: 30px;
+    color: gray;
+}
+
+.close span:hover {
+    color: black;
+}
+
+#exampleModalCenter {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.modal-header {
+    justify-content: flex-end;
+    border-bottom: 0;
+    padding: 0 1rem;
+}
+
+.modal-footer {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#donate-food,
+#donate-money {
+    background: var(--red);
+    font-family: var(--heading-font);
+    width: 93%;
+    font-size: 1.5rem;
+    padding: 3%;
+    margin-bottom: 0.6rem;
+    border-radius: 20px;
+}
+
+
+/* Expert team */
+
+#profiles {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+#team .box {
+    margin: 2%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 20%);
+    /* padding: 0.7%; */
+}
+
+#team .box1 {
+    margin-left: 5%;
+}
+
+#team .box .profile {
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--red);
+    font-family: var(--heading-font);
+}
+
+#team .box img {
+    margin: 10% 10% 5% 10%;
+    padding: 0% 10%;
+    width: 80%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+#team .box .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: 550;
+    font-size: 1.8rem;
+}
+
+#team .box .about {
+    text-align: center;
+    padding: 0 15%;
+    font-size: .9rem;
+    font-family: var(--para-font);
+}
+
+#team ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#team ul li {
+    list-style: none;
+    padding: 3%;
+}
+
+#team ul li a {
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+
+#team ul li a:hover {
+    color: var(--red);
+}
+
+#vision {
+    margin-top: 5%;
+}
+
+#goals {
+    width: 94%;
+    padding-left: 20px;
+    display: flex;
+}
+
+.para {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.para {
+    list-style: none;
+}
+
+.para li::before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    font-size: 25px;
+    margin-left: -1em;
+    margin-top: 10px;
+    content: "\00BB";
+}
+
+.para li {
+    padding-bottom: 10px;
+}
+
+.embed-responsive-item {
+    width: 85%;
+    height: 15rem;
+    margin-bottom: 40px;
+}
+
+.embed-responsive {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    align-items: center;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+}

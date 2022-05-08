@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/* CSS reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --red: #ed563b;
+    --heading-font: 'Ubuntu', sans-serif;
+    --para-font: 'Baloo Bhai 2', cursive;
+}
+
+/* Navigation Menu  */
+
+.container-fluid {
+    /* height: 10%; */
+    background-color: black;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 99999;
+    padding: 0;
+    opacity: 0.85;
+}
+
+.navbar-brand {
+    display: flex;
+    padding-top: 1.5%;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 2px orangered;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.navbar-brand p {
+    color: white;
+    font-size: 1.65rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    width: 76%;
+}
+
+.navbar-nav a {
+    padding-left: 80px;
+}
+
+.navbar-collapse {
+    /* margin-left: 6%; */
+    justify-content: center;
+}
+
+#navbarCollapse a {
+    color: white;
+    padding: 0px 24px;
+    font-size: 1.1rem;
+}
+
+#navbarCollapse a:hover {
+    color: var(--red);
+}
+
+#red-logo {
+    color: var(--red);
+}
+
+#login-form {
+    margin-left: 9%;
+}
+
+#sign-in-btn {
+    background-color: var(--red);
+    color: white;
+    cursor: pointer;
+    width: 7rem;
+    font-size: 1.1rem;
+    padding: 5.5% 0%;
+    border-radius: 7px;
+    font-family: var(--heading-font);
+}
+
+#sign-in-btn:hover {
+    background-color: #e93d1f;
+    transform: scale(1.03);
+}
+
+/* quotes section  */
+
+#quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#quotes .author {
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--red);
+    font-family: cursive;
+    text-shadow: 1px 1px 1px black;
+}
+
+#quotes .quotes2 {
+    margin-top: 50px;
+    color: black;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 1px 2px black;
+    font-family: 'Merienda', cursive;
+}
+
+#quotes .quotes2 span {
+    color: var(--red);
+}

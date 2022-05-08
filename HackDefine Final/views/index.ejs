@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Waste</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Add social media icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Image_Slider.css">
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="stylesheet" media=" screen and ( max-width : 1170px)" href="/responsive/syle.css">
+    <link rel="stylesheet" href="style-contact.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="./images/diet.png" height="32">
+                <p>Food <span id="red-logo">Waste!</span></p>
+            </a>
+            <button style="background-color: white;" type="button" class="navbar-toggler" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="#home" class="nav-item nav-link">Home</a>
+                    <a href="#About" class="nav-item nav-link">About Us</a>
+                    <a href="#events" class="nav-item nav-link">Events</a>
+                    <a href="#vision" class="nav-item nav-link">Our Vision</a>
+                    <a href="#team" class="nav-item nav-link">Our Team</a>
+                    <a href="#contact-us" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <form action="/sign" method="get" id="login-form">
+                    <button id="sign-in-btn"><%=username%></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <!-- Image Slider -->
+        <div class="image faded">
+            <img src="./images/Copy of food-waste-restaurants-study-money-1550253586666-1550253588658 (1).jpeg"
+                alt="Error Loading Image!">
+        </div>
+        <div class="image faded">
+            <img src="./images/Copy of pexels-ketut-subiyanto-4827163.jpg" alt="Error Loading Image!">
+        </div>
+        <div class="image faded">
+            <img src="./images/Copy of content13101.jpg" alt="Error Loading Image!">
+        </div>
+        <div class="image faded">
+            <img src="./images/Copy of AdobeStock_215852091_1920x960.jpg" alt="Error Loading Image!">
+        </div>
+        <div class="image faded">
+            <img src="./images/Copy of pexels-wendy-wei-3070381.jpg" alt="Error Loading Image!">
+        </div>
+        <a id="prev" onclick="show_slide(-1)">&#10094;</a>
+        <a id="next" onclick="show_slide(1)">&#10095;</a>
+    </section>
+
+    <section id="About">
+        <div id="main">
+            <h2 class="heading">About &nbsp;<span>Us</span> </h2>
+            <img src="./images/floating line.png" alt="Myfitnessstudio.com" ; class="floatingimg">
+            <div id="quotes">
+                <h1 class="quotes2">"To me, it’s sort of funny that wasting food is not <span>taboo</span>.<br> It’s one
+                    of the last
+                    environmental ills that you can just get away with"</h1>
+                <h4 class="author">~ Jonathan Bloom</h4>
+            </div>
+        </div>
+
+        <div id="motivate">
+            <h1 id="quote">DON’T <span class="red-span">THINK</span>, BEGIN <span class="red-span">TODAY</span>!</h1>
+            <p>We are solving food waste & hunger across 15+ cities in India!</p>
+            <button id="donate-btn" data-toggle="modal" data-target="#exampleModalCenter">Donate</button>
+           
+            <form action="/organisation" method="get">
+            <button id="donate-btn" data-toggle="modal" data-target="#exampleModalCenter">Apply now</button>
+           </form>
+          
+           <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+
+                        <div class="modal-footer">
+                            <form action="/byfood" method="get" class="donate-form">
+                                <button type="submit" class="btn btn-secondary" id="donate-food">Donate By Food</button>
+                            </form>
+                            <form action="/donate" method="get" class="donate-form">
+                                <button type="submit" class="btn btn-primary" id="donate-money">Donate By Money</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="events">
+        <h2 class="heading">Our Latest &nbsp;<span>Events</span> </h2>
+        <img src="./images/floating line.png" alt="Myfitnessstudio.com" ; class="floatingimg">
+        <div id="carousel-example-1z" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/5dca970153703c2f98a11c72_1573558.jpg" alt="First slide"
+                        style="height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/delhi-foodbank-gain-nid-36.jpg" alt="Second slide"
+                        style="height: 500px;">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/img1.png" alt="Third slide" style="height: 500px;">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="vision">
+        <h2 class="heading">Our &nbsp;<span>Vision</span> </h2>
+        <img src="./images/floating line.png" alt="Myfitnessstudio.com" ; class="floatingimg">
+        <div id="goals">
+            <ul class="para">
+                <li>Creating awareness about food waste, its impact to the environment and ways to prevent it by
+                    bringing knowledge to your door steps through local schools and community partnerships for a better
+                    tomorrow.</li>
+                <li>Our Mission is to reduce food waste by bringing awareness about food waste among community and kids,
+                    recover wonky produce, and recycle food waste through organic composting and animal feed.</li>
+                <li>Through education and awareness campaigns we educate businesses, community organizations and
+                    consumers about food waste and sustainability.</li>
+                <li>Through mentoring and technical assistance we help communities develop their own programs to reduce
+                    waste and reduce food insecurity.</li>
+                <li>Through our hotline we help connect food donors with non-profit organizations who provide meals or
+                    groceries to food insecure people, the elderly or children</li>
+            </ul>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="/images/Prevent Food Waste_ A Short Film _ FSSAI.mp4"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <h2 class="heading">Our &nbsp;<span class="red-span">Team</span> </h2>
+        <img src="/images/floating line.png" alt="Myfitnessstudio.com" ; class="floatingimg">
+        <div id="profiles">
+            <div class="box box1">
+                <img src="/images/vbv.jpg" alt="Myfitnessstudio.com">
+                <h2 class="name">Vaibhav Sachdeva</h2>
+                <p class="profile">Event<br> Manager</p>
+                <p class="about">Leads, guides, directs and evaluates all other managers and employees</p>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-snapchat-ghost"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box box2">
+                <img src="/images/harsh.png" alt="Myfitnessstudio.com">
+                <h2 class="name">Harsh K. Mishra</h2>
+                <p class="profile">Public Relation <br>Manager</p>
+                <p class="about">Create and maintain a favorable public image for their co-working employees</p>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-snapchat-ghost"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box box3">
+                <img src="/images/purav.png" alt="Myfitnessstudio.com">
+                <h2 class="name">Purav <span>Juneja</span></h2>
+                <p class="profile">Assistant <br>manager</p>
+                <p class="about">Assists with the daily operations of all food and beverages protocols</p>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-snapchat-ghost"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box box4">
+                <img src="/images/pranjal.png" alt="Myfitnessstudio.com">
+                <h2 class="name">Pranjal <span>Singh</span></h2>
+                <p class="profile">Food Production Manager</p>
+                <p class="about">Assists with the management and daily operations of all food and beverage</p>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-snapchat-ghost"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box box5">
+                <img src="/images/aadish.png" alt="Myfitnessstudio.com">
+                <h2 class="name">Aadish <span>Jain</span></h2>
+                <p class="profile">Catering <br> Manager</p>
+                <p class="about">Preparing, planning, and organizing the food and beverage service for events.</p>
+                <ul class="social-icons">
+                    <li>
+                        <a href="#" class="fa fa-facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" class="fa fa-snapchat-ghost"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <h2 class="heading">Contact &nbsp;<span>Us</span></h2>
+        <img src="./images/floating line.png" alt="Myfitnessstudio.com" ; class="floatingimg">
+        <div class="container contact-form">
+            <div class="contact-image">
+                <img src="https://png.pngtree.com/png-vector/20200323/ourlarge/pngtree-burger-icon-with-black-background-png-image_2164201.jpg"
+                    alt="rocket_contact" class="shadow" />
+            </div>
+            <form action="/Contact-Us" method="post">
+                <h3>Drop Us a Message</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your Name *"
+                                value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Your Email *"
+                                value="" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="phone" name="phone" class="form-control"
+                                placeholder="Your Phone Number *" value="" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control" placeholder="Your Message *"
+                                style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" id="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="Image_Slider.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

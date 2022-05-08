@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+/* CSS Variables */
+:root {
+    --red: #ed563b;
+    --heading-font: 'Ubuntu', sans-serif;
+    --para-font: 'Baloo Bhai 2', cursive;
+}
+
+body {
+    background: -webkit-linear-gradient(left, #ed563b, #c37567);
+}
+
+.form {
+    width: 90%
+}
+
+input {
+    border-radius: 1rem;
+    border-color: rgb(229, 227, 227);
+    margin-bottom: 1.5rem;
+
+}
+
+input:focus {
+    border: solid #df5c44;
+    border-radius: 1rem;
+    border-color: rgb(229, 227, 227);
+    box-shadow: 0 0 0.8rem var(--red);
+    outline-offset: 0px;
+    outline: none;
+    margin-bottom: 1rem;
+}
+
+.donation {
+    padding: 3rem;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btns {
+    background-color: var(--red);
+    cursor: pointer;
+    padding: 0.5% 2%;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#cooked-btn {
+    border-radius: 3rem 0px 0px 3rem;
+    width: 25%;
+    height: 5rem;
+}
+
+#raw-btn {
+    border-radius: 0 3rem 3rem 0px;
+    width: 25%;
+    height: 5rem;
+}
+
+#details {
+    margin-top: 3rem;
+    margin-left: 27.5%;
+    max-width: 50%;
+    justify-content: center;
+
+
+}
+
+#organization {
+    margin-left: 3rem;
+}
+
+.changed {
+    background-color: #7d1e0d;
+    cursor: pointer;
+    padding: 0.5% 2%;
+    border-radius: 7px;
+    font-family: var(--heading-font);
+    color: white;
+}
+
+#plus {
+    border: thin;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    padding: 1% 5%;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+#items {
+    display: flex;
+    flex-direction: column;
+}
+
+#submit {
+    background-color: var(--red);
+    color: white;
+    cursor: pointer;
+    width: 7rem;
+    font-size: 1.1rem;
+    padding: 0.5% 0%;
+    border-radius: 7px;
+    font-family: var(--heading-font);
+}
+
+input {
+    padding: 1% 5%;
+}

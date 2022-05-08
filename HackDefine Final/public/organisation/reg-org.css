@@ -1,0 +1,116 @@
+h1 {
+    color: #e93d1f;
+}
+
+.form {
+    width: 100%;
+}
+
+input {
+    border: solid #df5c44;
+    border-radius: 1rem;
+    border-color: rgb(229, 227, 227);
+    margin-bottom: 1.5rem;
+
+}
+
+input:focus {
+    border: solid #df5c44;
+    border-radius: 1rem;
+    border-color: rgb(229, 227, 227);
+    box-shadow: 0 0 0.8rem #ed563b;
+    outline-offset: 0px;
+    outline: none;
+
+    margin-bottom: 1rem;
+}
+
+body {
+    background: -webkit-linear-gradient(left, #ed563b, #c37567);
+}
+
+.contact-form {
+    background: #fff;
+    margin-top: 5%;
+    margin-bottom: 1.5%;
+    border-radius: 2%;
+}
+
+.contact-form .form-control {
+    border-radius: 1rem;
+}
+
+.contact-image {
+    text-align: center;
+
+}
+
+.contact-form .form-group {
+    padding-bottom: 1rem;
+}
+
+.contact-image img {
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+
+.contact-form form {
+    padding: 10%;
+}
+
+.contact-form form .row {
+    margin-left: 18%;
+    margin-bottom: -7%;
+}
+
+.contact-form h3 {
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #ed563b;
+}
+
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btnContactSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+#other {
+    margin-left: 5%;
+}
+
+.register {
+    padding: 3rem;
+    margin-top: 3rem;
+    margin-left: 25%;
+    max-width: 50%;
+
+    background-color: white;
+}
+
+#submit {
+    background-color: #ed563b;
+    color: white;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: none;
+}
